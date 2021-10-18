@@ -11,10 +11,20 @@ jobs:
     name: Publish to surge
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to phil.surge.sh
-        uses: dswistowski/surge-sh-action@v1
-        with:
-          domain: 'phil.surge.sh'
-          project: '.'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
+#       - name: Deploy to phil.surge.sh
+#         uses: dswistowski/surge-sh-action@v1
+#         with:
+#           domain: 'phil.surge.sh'
+#           project: '.'
+#           login: ${{ secrets.surge_login }}
+#           token: ${{ secrets.surge_token }}
+       - uses: actions/checkout@v2
+        # Install node version 12
+       - name: Setup Node.js environment
+         run: npm install
+       - name: Build Yarn and npm
+         run: npm run build 
+       - name: Install Surge
+         run: npm install -g surge
+       - name: Deploying on Surge
+         run: surge . phil.surge.sh --token ${{secrets.surge_token}}"
