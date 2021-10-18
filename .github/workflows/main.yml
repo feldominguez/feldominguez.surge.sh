@@ -23,4 +23,4 @@ jobs:
        - name: Install Surge
          run: npm install -g surge
        - name: Deploying on Surge
-         run: surge dist phil.surge.sh --token ${{secrets.surge_token}}"
+         run: surge dist phil.surge.sh --token ${{secrets.surge_token}}
