@@ -6,11 +6,14 @@ jobs:
   publish-job:
     name: Publish to surge
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dist
     steps:
       - name: Deploy to phil.surge.sh
         uses: dswistowski/surge-sh-action@v1
         with:
           domain: 'phil.surge.sh'
-          project: 'dist'
+          project: '.'
           login: ${{ secrets.surge_login }}
           token: ${{ secrets.surge_token }}
