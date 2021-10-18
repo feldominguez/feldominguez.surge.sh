@@ -12,7 +12,8 @@
     "typeface-space-mono": "1.1.13"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0"
+    "@babel/core": "7.2.0",
+    "surge": "0.23.0"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
