@@ -2,13 +2,14 @@ name: Publish to surge on push
 
 on: push
 
+defaults:
+  run:
+    working-directory: dist
+
 jobs:
   publish-job:
     name: Publish to surge
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: dist
     steps:
       - name: Deploy to phil.surge.sh
         uses: dswistowski/surge-sh-action@v1
