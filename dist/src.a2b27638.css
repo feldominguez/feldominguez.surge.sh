@@ -1,0 +1,125 @@
+body {
+  font-family: "Space Mono";
+  background-color: #011215;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #93efe9;
+}
+
+h1 {
+  font-size: clamp(18px, 13vw, 100px);
+  margin-bottom: -5px;
+  margin-top: 0.2em;
+}
+
+h3 {
+  margin-bottom: clamp(5px, 2vw, 18px);
+  margin-top: 0;
+  font-size: clamp(10px, 5vw, 40px);
+}
+
+a {
+  color: #ff6d6d;
+  font-size: clamp(18px, 5vw, 28px);
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: clamp(10px, 5vw, 70px);
+  margin-bottom: 8px;
+  width: fit-content;
+  padding: 8px;
+}
+
+a:hover {
+  color: #ff9898;
+  display: block;
+}
+
+p {
+  font-size: 22px;
+}
+
+section {
+  max-width: 680px;
+  margin-bottom: 20px;
+}
+
+section.contact {
+  display: flex;
+  flex-flow: column;
+  min-height: 130px;
+  justify-content: flex-start;
+}
+
+@media (min-width: 668px) {
+  section.contact {
+    flex-flow: row;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+
+/* space-mono-400normal - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Space Mono Regular '),
+    local('Space Mono-Regular'),
+    url('/space-mono-latin-400.06cf87ef.woff2') format('woff2'), 
+    url('/space-mono-latin-400.6389a58c.woff') format('woff'); /* Modern Browsers */
+}
+
+/* space-mono-400italic - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local('Space Mono Regular italic'),
+    local('Space Mono-Regularitalic'),
+    url('/space-mono-latin-400italic.42f1450d.woff2') format('woff2'), 
+    url('/space-mono-latin-400italic.9a43097f.woff') format('woff'); /* Modern Browsers */
+}
+
+/* space-mono-700normal - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Space Mono Bold '),
+    local('Space Mono-Bold'),
+    url('/space-mono-latin-700.2e9d250c.woff2') format('woff2'), 
+    url('/space-mono-latin-700.e3142d9b.woff') format('woff'); /* Modern Browsers */
+}
+
+/* space-mono-700italic - latin */
+@font-face {
+  font-family: 'Space Mono';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Space Mono Bold italic'),
+    local('Space Mono-Bolditalic'),
+    url('/space-mono-latin-700italic.178623ba.woff2') format('woff2'), 
+    url('/space-mono-latin-700italic.8c45d97a.woff') format('woff'); /* Modern Browsers */
+}
+
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
